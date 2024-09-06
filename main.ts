@@ -92,8 +92,8 @@ led.setBrightness(14)
 _8G_ON = 0
 _8G_Page = 3
 // IF LOGO TAP Function ON =1
-LOGOTAP_ON = 3
-LOGOTAP_ON_PAGE = 3
+LOGOTAP_ON = 0
+LOGOTAP_ON_PAGE = 4
 Mode_AB = 0
 // START Super Inpose
 // PAGE
