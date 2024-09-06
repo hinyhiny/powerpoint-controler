@@ -21,7 +21,7 @@ input.onGesture(Gesture.EightG, function () {
         music.play(music.createSoundExpression(WaveShape.Square, 54, 54, 255, 0, 1000, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
         Mode_AB = 1
         // If 8G Enable. Then Open Slide Page in it
-        Mode_AB_Page = 3
+        Mode_AB_Page = _8G_Page
         keyboard.sendString(convertToText(Mode_AB_Page))
         keyboard.sendString(keyboard.keys(keyboard._Key.enter))
         basic.showIcon(IconNames.Yes)
@@ -65,7 +65,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
         music.play(music.createSoundExpression(WaveShape.Square, 54, 54, 255, 0, 1000, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
         Mode_AB = 1
         // If 8G Enable. Then Open Slide Page in it
-        Mode_AB_Page = 3
+        Mode_AB_Page = LOGOTAP_ON_PAGE
         keyboard.sendString(convertToText(Mode_AB_Page))
         keyboard.sendString(keyboard.keys(keyboard._Key.enter))
         basic.showIcon(IconNames.Yes)
@@ -82,14 +82,18 @@ let Mode_AB_Excute = 0
 let Mode_AB_EndPage = 0
 let Mode_AB_StartPage = 0
 let Mode_AB = 0
+let LOGOTAP_ON_PAGE = 0
 let LOGOTAP_ON = 0
+let _8G_Page = 0
 let _8G_ON = 0
 keyboard.startKeyboardService()
 led.setBrightness(14)
 // IF 8G Function ON =1
 _8G_ON = 0
+_8G_Page = 3
 // IF LOGO TAP Function ON =1
-LOGOTAP_ON = 0
+LOGOTAP_ON = 3
+LOGOTAP_ON_PAGE = 3
 Mode_AB = 0
 // START Super Inpose
 // PAGE
